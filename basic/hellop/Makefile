@@ -17,7 +17,6 @@ cdb $(CDB):
 	bear -- $(MAKE) -C $(KERNELDIR) M=$(PWD) CC=$(CC) modules
 
 clean:
-	rm $(CDB)
 	$(MAKE) -C $(KERNELDIR) M=$(PWD) clean
 
 .PHONY: default clean cdb
